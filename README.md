@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://github.com/user-attachments/assets/f4c2cdbe-7222-49fb-b1cd-9861cfb77b1e" alt="AI-Driven Code Reviewer Logo" width="120" height="120" style="border-radius: 50%;" />
+<img src="https://github.com/user-attachments/assets/f4c2cdbe-7222-49fb-b1cd-9861cfb77b1e" alt="AI-Driven Code Reviewer Logo" width="200" height="200" style="border-radius: 50%;" />
 
 # AI-Driven Code Reviewer
 
