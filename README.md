@@ -4,23 +4,6 @@
   
 <img src="https://github.com/user-attachments/assets/f4c2cdbe-7222-49fb-b1cd-9861cfb77b1e" alt="AI-Driven Code Reviewer Logo" width="200" height="200" style="border-radius: 50%;" />
 
-### An intelligent platform that analyzes code, detects errors, improves code quality,<br/>and optimizes performance using advanced AI models.
-
-<p align="center">
-  💡 Built for developers who want <strong>instant, actionable feedback</strong> on their code —
-  whether you're a beginner learning best practices or an experienced engineer optimizing for performance.<br/>
-  Powered by <strong>Groq's ultra-fast LPU inference</strong>, reviews are delivered in <em>seconds, not minutes.</em>
-</p>
-
-<p align="center">
-  🔍 <strong>Analyze</strong> bugs & anti-patterns &nbsp;·&nbsp;
-  ⚡ <strong>Optimize</strong> with AI-generated alternatives &nbsp;·&nbsp;
-  📊 <strong>Visualize</strong> Time & Space complexity &nbsp;·&nbsp;
-  🤖 <strong>Chat</strong> with a code-aware AI assistant
-</p>
-
-<br/>
-
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3-38BDF8?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
@@ -28,7 +11,12 @@
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Groq](https://img.shields.io/badge/Groq-LPU%20AI-F55036?style=for-the-badge&logo=groq&logoColor=white)](https://groq.com/)
 
-<br/>
+### An intelligent platform that analyzes code, detects errors, improves code quality, and optimizes performance using advanced AI models.
+
+💡 Built for developers who want **instant, actionable feedback** on their code — whether you're a beginner learning best practices or an experienced engineer optimizing for performance.
+Powered by **Groq's ultra-fast LPU inference**, reviews are delivered in **seconds, not minutes.**
+
+🔍 **Analyze** bugs & anti-patterns · ⚡ **Optimize** with AI-generated alternatives · 📊 **Visualize** Time & Space complexity · 🤖 **Chat** with a code-aware AI assistant
 
 </div>
 
