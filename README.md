@@ -1,8 +1,8 @@
 <div align="center">
-
-<img src="https://github.com/user-attachments/assets/f4c2cdbe-7222-49fb-b1cd-9861cfb77b1e" alt="AI-Driven Code Reviewer Logo" width="200" height="200" style="border-radius: 50%;" />
-
+  
 # AI-Driven Code Reviewer
+  
+<img src="https://github.com/user-attachments/assets/f4c2cdbe-7222-49fb-b1cd-9861cfb77b1e" alt="AI-Driven Code Reviewer Logo" width="200" height="200" style="border-radius: 50%;" />
 
 ### An intelligent platform that analyzes code, detects errors, improves code quality, and optimizes performance using advanced AI models.
 
