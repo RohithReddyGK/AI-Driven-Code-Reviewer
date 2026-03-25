@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="public/Logo.png" alt="AI-Driven Code Reviewer Logo" width="120" height="120" style="border-radius: 50%;" />
+<img src="https://github.com/user-attachments/assets/f4c2cdbe-7222-49fb-b1cd-9861cfb77b1e" alt="AI-Driven Code Reviewer Logo" width="120" height="120" style="border-radius: 50%;" />
 
-# 🤖 AI-Driven Code Reviewer
+# AI-Driven Code Reviewer
 
 ### An intelligent platform that analyzes code, detects errors, improves code quality, and optimizes performance using advanced AI models.
 
@@ -18,22 +18,6 @@
 <br/>
 
 [🚀 Live Demo](#) &nbsp;|&nbsp; [📖 Documentation](#features) &nbsp;|&nbsp; [🐛 Report Bug](https://github.com/RohithReddyGK/AI-Driven-Code-Reviewer/issues) &nbsp;|&nbsp; [✨ Request Feature](https://github.com/RohithReddyGK/AI-Driven-Code-Reviewer/issues)
-
-</div>
-
----
-
-## 📸 Screenshots
-
-<div align="center">
-
-| Landing Page | Analyze Page |
-|---|---|
-| ![Landing Page](screenshots/landing.png) | ![Analyze Page](screenshots/analyze.png) |
-
-| Code Editor | Quick Analyze |
-|---|---|
-| ![Code Editor](screenshots/editor.png) | ![Quick Analyze](screenshots/quick.png) |
 
 </div>
 
@@ -78,9 +62,6 @@
 | [Flask](https://flask.palletsprojects.com/) | REST API Server |
 | [Flask-CORS](https://flask-cors.readthedocs.io/) | Cross-Origin Requests |
 | AI/LLM API | Code Analysis Engine |
-
----
-
 
 ---
 
@@ -213,22 +194,6 @@ Please make sure your code follows the existing style and all pages remain mobil
 
 ---
 
-## 🐛 Known Issues / Roadmap
-
-- [ ] Add user authentication & saved projects
-- [ ] Support more languages (TypeScript, Rust, Kotlin)
-- [ ] Add line-by-line inline comments in the editor
-- [ ] GitHub PR integration
-- [ ] Backend deployment (Railway / Render)
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
-
----
-
 ## 👨‍💻 Author
 
 <div align="center">
@@ -240,5 +205,3 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 ⭐ If you found this project useful, please consider giving it a **star**!
 
 </div>
-
-## 📁 Project Structure
