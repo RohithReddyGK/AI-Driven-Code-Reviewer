@@ -13,12 +13,8 @@
 
 </div>
 
-### An intelligent platform that analyzes code, detects errors, improves code quality, and optimizes performance using advanced AI models.
-
-💡 Built for developers who want **instant, actionable feedback** on their code — whether you're a beginner learning best practices or an experienced engineer optimizing for performance.
-Powered by **Groq's ultra-fast LPU inference**, reviews are delivered in **seconds, not minutes.**
-
-🔍 **Analyze** bugs & anti-patterns · ⚡ **Optimize** with AI-generated alternatives · 📊 **Visualize** Time & Space complexity · 🤖 **Chat** with a code-aware AI assistant
+An intelligent platform that analyzes code, detects errors, improves code quality, and optimizes performance using advanced AI models. Built for developers who want **instant, actionable feedback** on their code — whether you're a beginner learning best practices or an experienced engineer optimizing for performance.
+Powered by **Groq's ultra-fast LPU inference**, reviews are delivered in **seconds, not minutes.** **Analyze** bugs & anti-patterns. **Optimize** with AI-generated alternatives. **Visualize** Time & Space complexity. **Chat** with a code-aware AI assistant
 
 ---
 
