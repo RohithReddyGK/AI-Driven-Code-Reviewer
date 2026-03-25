@@ -7,14 +7,12 @@
 ### An intelligent platform that analyzes code, detects errors, improves code quality, and optimizes performance using advanced AI models.
 
 <br/>
-
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3-38BDF8?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![Flask](https://img.shields.io/badge/Flask-3-000000?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
-
+[![Groq](https://img.shields.io/badge/Groq-LPU%20AI-F55036?style=for-the-badge&logo=groq&logoColor=white)](https://groq.com/)
 <br/>
 
 [🚀 Live Demo](#) &nbsp;|&nbsp; [📖 Documentation](#features) &nbsp;|&nbsp; [🐛 Report Bug](https://github.com/RohithReddyGK/AI-Driven-Code-Reviewer/issues) &nbsp;|&nbsp; [✨ Request Feature](https://github.com/RohithReddyGK/AI-Driven-Code-Reviewer/issues)
