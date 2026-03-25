@@ -17,8 +17,6 @@
 
 <br/>
 
-[🚀 Live Demo](#) &nbsp;|&nbsp; [📖 Documentation](#features) &nbsp;|&nbsp; [🐛 Report Bug](https://github.com/RohithReddyGK/AI-Driven-Code-Reviewer/issues) &nbsp;|&nbsp; [✨ Request Feature](https://github.com/RohithReddyGK/AI-Driven-Code-Reviewer/issues)
-
 </div>
 
 ---
