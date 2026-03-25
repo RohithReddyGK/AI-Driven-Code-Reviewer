@@ -7,6 +7,7 @@ import {
   TrendingUp, History, X
 } from "lucide-react";
 import AIChatBubble from "./AIChatBubble";
+import BASE_URL from "../config";
 
 /* ═══════════════════════════════════════════
    TINY HELPERS
@@ -111,7 +112,7 @@ const ComplexityChart = ({ chartData }) => {
   const toArea = (values) =>
     `${toPath(values)} L ${xPos(values.length - 1)} ${padT + innerH} L ${xPos(0)} ${padT + innerH} Z`;
   const colors = {
-    time:  { stroke: "#f59e0b", fill: "rgba(245,158,11,0.12)",  dot: "#f59e0b", label: "#d97706" },
+    time: { stroke: "#f59e0b", fill: "rgba(245,158,11,0.12)", dot: "#f59e0b", label: "#d97706" },
     space: { stroke: "#34d399", fill: "rgba(52,211,153,0.12)", dot: "#34d399", label: "#059669" },
   };
   return (
@@ -135,14 +136,14 @@ const ComplexityChart = ({ chartData }) => {
             <text x={padL - 4} y={yPos(v) + 3} textAnchor="end" fontSize={7} fill="#9ca3af">{v}</text>
           </g>
         ))}
-        <path d={toArea(time_values)}  fill={colors.time.fill} />
+        <path d={toArea(time_values)} fill={colors.time.fill} />
         <path d={toArea(space_values)} fill={colors.space.fill} />
-        <path d={toPath(time_values)}  fill="none" stroke={colors.time.stroke}  strokeWidth={2} strokeLinejoin="round" strokeLinecap="round" />
+        <path d={toPath(time_values)} fill="none" stroke={colors.time.stroke} strokeWidth={2} strokeLinejoin="round" strokeLinecap="round" />
         <path d={toPath(space_values)} fill="none" stroke={colors.space.stroke} strokeWidth={2} strokeLinejoin="round" strokeLinecap="round" />
         {labels.map((label, i) => (
           <g key={i}>
-            <circle cx={xPos(i)} cy={yPos(time_values[i])}  r={3.5} fill={colors.time.dot}  stroke="white" strokeWidth={1.5} />
-            <text x={xPos(i)} y={yPos(time_values[i]) - 7}  textAnchor="middle" fontSize={8} fill={colors.time.label}  fontWeight="600">{time_values[i]}</text>
+            <circle cx={xPos(i)} cy={yPos(time_values[i])} r={3.5} fill={colors.time.dot} stroke="white" strokeWidth={1.5} />
+            <text x={xPos(i)} y={yPos(time_values[i]) - 7} textAnchor="middle" fontSize={8} fill={colors.time.label} fontWeight="600">{time_values[i]}</text>
             <circle cx={xPos(i)} cy={yPos(space_values[i])} r={3.5} fill={colors.space.dot} stroke="white" strokeWidth={1.5} />
             <text x={xPos(i)} y={yPos(space_values[i]) - 7} textAnchor="middle" fontSize={8} fill={colors.space.label} fontWeight="600">{space_values[i]}</text>
             <text x={xPos(i)} y={H - 4} textAnchor="middle" fontSize={9} fill="#9ca3af">{label}</text>
@@ -298,29 +299,29 @@ const exportToPDF = (analysisData, code, language) => {
   <h2>⚡ Complexity Analysis</h2>
   <div class="complexity-grid">
     <div class="box box-amber"><div class="box-label amber-label">Current Code</div>
-    <div class="metric">⏱ <span class="badge amber-badge">${current_complexity?.time||"N/A"}</span></div>
-    <div class="explain">${current_complexity?.time_explanation||""}</div>
-    <div class="metric">💾 <span class="badge amber-badge">${current_complexity?.space||"N/A"}</span></div>
-    <div class="explain">${current_complexity?.space_explanation||""}</div></div>
-    <div class="box box-green"><div class="box-label green-label">Optimized: ${optimized_title||""}</div>
-    <div class="metric">⏱ <span class="badge green-badge">${optimized_complexity?.time||"N/A"}</span></div>
-    <div class="explain">${optimized_complexity?.time_explanation||""}</div>
-    <div class="metric">💾 <span class="badge green-badge">${optimized_complexity?.space||"N/A"}</span></div>
-    <div class="explain">${optimized_complexity?.space_explanation||""}</div></div>
+    <div class="metric">⏱ <span class="badge amber-badge">${current_complexity?.time || "N/A"}</span></div>
+    <div class="explain">${current_complexity?.time_explanation || ""}</div>
+    <div class="metric">💾 <span class="badge amber-badge">${current_complexity?.space || "N/A"}</span></div>
+    <div class="explain">${current_complexity?.space_explanation || ""}</div></div>
+    <div class="box box-green"><div class="box-label green-label">Optimized: ${optimized_title || ""}</div>
+    <div class="metric">⏱ <span class="badge green-badge">${optimized_complexity?.time || "N/A"}</span></div>
+    <div class="explain">${optimized_complexity?.time_explanation || ""}</div>
+    <div class="metric">💾 <span class="badge green-badge">${optimized_complexity?.space || "N/A"}</span></div>
+    <div class="explain">${optimized_complexity?.space_explanation || ""}</div></div>
   </div>
-  <h2>🚀 Optimized Code — ${optimized_title||""}</h2>
-  <pre>${(optimized_code||"").replace(/</g,"&lt;").replace(/>/g,"&gt;")}</pre>
-  <h2>💡 Suggestions (${suggestions?.length||0})</h2>
-  ${(suggestions||[]).map((s,i)=>`<div class="suggestion"><div class="suggestion-title">${i+1}. ${s.title}</div>
-  <div class="suggestion-issue">${s.issue||""}</div>
-  <pre>${(s.code||"").replace(/</g,"&lt;").replace(/>/g,"&gt;")}</pre></div>`).join("")}
+  <h2>🚀 Optimized Code — ${optimized_title || ""}</h2>
+  <pre>${(optimized_code || "").replace(/</g, "&lt;").replace(/>/g, "&gt;")}</pre>
+  <h2>💡 Suggestions (${suggestions?.length || 0})</h2>
+  ${(suggestions || []).map((s, i) => `<div class="suggestion"><div class="suggestion-title">${i + 1}. ${s.title}</div>
+  <div class="suggestion-issue">${s.issue || ""}</div>
+  <pre>${(s.code || "").replace(/</g, "&lt;").replace(/>/g, "&gt;")}</pre></div>`).join("")}
   <h2>📝 Original Code</h2>
-  <pre>${code.replace(/</g,"&lt;").replace(/>/g,"&gt;")}</pre>
+  <pre>${code.replace(/</g, "&lt;").replace(/>/g, "&gt;")}</pre>
   <div class="footer">Generated by AI-Driven Code Reviewer | ${new Date().toLocaleDateString()}</div>
   </body></html>`;
   const blob = new Blob([html], { type: "text/html" });
-  const url  = URL.createObjectURL(blob);
-  const win  = window.open(url, "_blank");
+  const url = URL.createObjectURL(blob);
+  const win = window.open(url, "_blank");
   if (win) { win.onload = () => { win.print(); URL.revokeObjectURL(url); }; }
 };
 
@@ -340,46 +341,46 @@ const detectLanguage = (code) => {
    MAIN COMPONENT
 ═══════════════════════════════════════════ */
 const EditorPage = () => {
-  const [darkMode, setDarkMode]         = useState(false);
-  const [language, setLanguage]         = useState("javascript");
-  const [code, setCode]                 = useState("");
+  const [darkMode, setDarkMode] = useState(false);
+  const [language, setLanguage] = useState("javascript");
+  const [code, setCode] = useState("");
   const [openDropdown, setOpenDropdown] = useState(false);
-  const [loading, setLoading]           = useState(false);
+  const [loading, setLoading] = useState(false);
   const [analysisData, setAnalysisData] = useState(null);
-  const [copiedIndex, setCopiedIndex]   = useState(null);
+  const [copiedIndex, setCopiedIndex] = useState(null);
   const [copiedOptimized, setCopiedOptimized] = useState(false);
-  const [connected, setConnected]       = useState(true);
-  const [filename, setFilename]         = useState("main.js");
+  const [connected, setConnected] = useState(true);
+  const [filename, setFilename] = useState("main.js");
   const [analysisHistory, setAnalysisHistory] = useState([]);
-  const [showHistory, setShowHistory]   = useState(false);
-  const [error, setError]               = useState("");
+  const [showHistory, setShowHistory] = useState(false);
+  const [error, setError] = useState("");
   const [langMismatch, setLangMismatch] = useState(null);
   const [showMismatchBanner, setShowMismatchBanner] = useState(false);
   // ── Mobile: which panel is active ──
-  const [mobilePanel, setMobilePanel]   = useState("editor"); // "editor" | "review"
+  const [mobilePanel, setMobilePanel] = useState("editor"); // "editor" | "review"
 
   const [previousCode, setPreviousCode] = useState("");
   const previousCodeRef = useRef("");
   const lastAnalyzedRef = useRef("");
-  const editorRef       = useRef(null);
+  const editorRef = useRef(null);
 
   const languages = [
-    { name: "JavaScript", value: "javascript", ext: "js",   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
-    { name: "Python",     value: "python",     ext: "py",   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
-    { name: "Java",       value: "java",       ext: "java", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
-    { name: "C++",        value: "cpp",        ext: "cpp",  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" },
-    { name: "C",          value: "c",          ext: "c",    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" },
-    { name: "Go",         value: "go",         ext: "go",   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg" },
+    { name: "JavaScript", value: "javascript", ext: "js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+    { name: "Python", value: "python", ext: "py", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+    { name: "Java", value: "java", ext: "java", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
+    { name: "C++", value: "cpp", ext: "cpp", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" },
+    { name: "C", value: "c", ext: "c", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" },
+    { name: "Go", value: "go", ext: "go", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg" },
   ];
   const currentLang = languages.find((l) => l.value === language);
 
   const defaultCode = {
     javascript: `// Write your JavaScript code here\n\nfunction example() {\n  console.log("Hello World");\n}`,
-    python:     `# Write your Python code here\n\ndef example():\n    print("Hello World")`,
-    java:       `// Write your Java code here\n\nclass Main {\n  public static void main(String[] args) {\n    System.out.println("Hello World");\n  }\n}`,
-    cpp:        `// Write your C++ code here\n\n#include <iostream>\nusing namespace std;\n\nint main() {\n  cout << "Hello World";\n  return 0;\n}`,
-    c:          `// Write your C code here\n\n#include <stdio.h>\n\nint main() {\n  printf("Hello World");\n  return 0;\n}`,
-    go:         `// Write your Go code here\n\npackage main\nimport "fmt"\n\nfunc main() {\n  fmt.Println("Hello World")\n}`,
+    python: `# Write your Python code here\n\ndef example():\n    print("Hello World")`,
+    java: `// Write your Java code here\n\nclass Main {\n  public static void main(String[] args) {\n    System.out.println("Hello World");\n  }\n}`,
+    cpp: `// Write your C++ code here\n\n#include <iostream>\nusing namespace std;\n\nint main() {\n  cout << "Hello World";\n  return 0;\n}`,
+    c: `// Write your C code here\n\n#include <stdio.h>\n\nint main() {\n  printf("Hello World");\n  return 0;\n}`,
+    go: `// Write your Go code here\n\npackage main\nimport "fmt"\n\nfunc main() {\n  fmt.Println("Hello World")\n}`,
   };
 
   useEffect(() => {
@@ -444,7 +445,7 @@ const EditorPage = () => {
     }
 
     try {
-      const response = await fetch("http://127.0.0.1:5000/analyze", {
+      const response = await fetch(`${BASE_URL}/analyze`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ code, language, mismatch_note: mismatchNote }),

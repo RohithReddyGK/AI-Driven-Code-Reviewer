@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "./Navbar";
 import { ChevronDown, Zap, AlertTriangle, Copy, CheckCircle, RotateCcw, X } from "lucide-react";
 import AIChatBubble from "./AIChatBubble";
+import BASE_URL from "../config";
 
 const languages = [
   { name: "JavaScript", value: "javascript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
@@ -88,7 +89,7 @@ const QuickAnalyzePage = () => {
     }
 
     try {
-      const response = await fetch("http://127.0.0.1:5000/analyze", {
+      const response = await fetch(`${BASE_URL}/analyze`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ code, language, mode: "quick", mismatch_note: mismatchNote }),

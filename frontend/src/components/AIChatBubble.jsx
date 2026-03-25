@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { X, Send, Minimize2, Maximize2, Sparkles, Copy, CheckCircle } from "lucide-react";
-
+import BASE_URL from "../config";
 
 /* ─────────────────────────────────────────────
    PARSE AI REPLY → mixed text + code blocks
@@ -117,7 +117,6 @@ const MessageBubble = ({ msg, dark }) => {
   );
 };
 
-
 /* ═══════════════════════════════════════════
    MAIN COMPONENT
 ═══════════════════════════════════════════ */
@@ -151,7 +150,7 @@ const AIChatBubble = ({ currentCode = "", previousCode = "", language = "code", 
 
     try {
       const history = messages.map((m) => ({ role: m.role, content: m.text }));
-      const response = await fetch("http://127.0.0.1:5000/chat", {
+      const response = await fetch(`${BASE_URL}/chat`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: text, history, currentCode, previousCode, language, analysisHistory }),
