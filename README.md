@@ -4,7 +4,20 @@
   
 <img src="https://github.com/user-attachments/assets/f4c2cdbe-7222-49fb-b1cd-9861cfb77b1e" alt="AI-Driven Code Reviewer Logo" width="200" height="200" style="border-radius: 50%;" />
 
-### An intelligent platform that analyzes code, detects errors, improves code quality, and optimizes performance using advanced AI models.
+### An intelligent platform that analyzes code, detects errors, improves code quality,<br/>and optimizes performance using advanced AI models.
+
+<p align="center">
+  💡 Built for developers who want <strong>instant, actionable feedback</strong> on their code —
+  whether you're a beginner learning best practices or an experienced engineer optimizing for performance.<br/>
+  Powered by <strong>Groq's ultra-fast LPU inference</strong>, reviews are delivered in <em>seconds, not minutes.</em>
+</p>
+
+<p align="center">
+  🔍 <strong>Analyze</strong> bugs & anti-patterns &nbsp;·&nbsp;
+  ⚡ <strong>Optimize</strong> with AI-generated alternatives &nbsp;·&nbsp;
+  📊 <strong>Visualize</strong> Time & Space complexity &nbsp;·&nbsp;
+  🤖 <strong>Chat</strong> with a code-aware AI assistant
+</p>
 
 <br/>
 
