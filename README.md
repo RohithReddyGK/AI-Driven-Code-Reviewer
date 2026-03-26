@@ -4,6 +4,7 @@
   
 <img src="https://github.com/user-attachments/assets/f4c2cdbe-7222-49fb-b1cd-9861cfb77b1e" alt="AI-Driven Code Reviewer Logo" width="200" height="200" style="border-radius: 50%;" />
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-codereviewiq.vercel.app-00C7B7?style=for-the-badge&logo=vercel&logoColor=white)](https://codereviewiq.vercel.app/)
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3-38BDF8?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
@@ -164,6 +165,15 @@ AI_API_KEY=your_api_key_here
 | C++ | `.cpp` | ✅ Auto-detect |
 | C | `.c` | ✅ Auto-detect |
 | Go | `.go` | ✅ Auto-detect |
+
+---
+
+## 🚀 Deployments
+
+| Service | Platform | URL |
+|--------|----------|-----|
+| 🎨 Frontend | Vercel | [codereviewiq.vercel.app](https://codereviewiq.vercel.app/) |
+| ⚙️ Backend | Vercel | [ai-driven-code-review-backend.vercel.app](https://ai-driven-code-review-backend.vercel.app/) |
 
 ---
 
