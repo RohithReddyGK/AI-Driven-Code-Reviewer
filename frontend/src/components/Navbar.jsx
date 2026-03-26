@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Sun, Moon, Menu, X } from "lucide-react";
+import { Sun, Moon, Menu, X, House, Code2, Info, CircleHelp } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = ({ darkMode, setDarkMode }) => {
@@ -30,9 +30,18 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
         {/* CENTER: Nav Links — desktop only */}
         <div className="hidden md:flex items-center gap-10 text-xl font-semibold text-gray-900 dark:text-gray-200">
-          <Link to="/analyze" className="hover:text-blue-500 transition">Analyze Code</Link>
-          <Link to="/about" className="hover:text-blue-500 transition">About</Link>
-          <Link to="/help" className="hover:text-blue-500 transition">Help</Link>
+          <Link to="/" className="flex items-center gap-1.5 hover:text-blue-500 transition">
+            <House size={20} /> Home
+          </Link>
+          <Link to="/analyze" className="flex items-center gap-1.5 hover:text-blue-500 transition">
+            <Code2 size={20} /> Analyze Code
+          </Link>
+          <Link to="/about" className="flex items-center gap-1.5 hover:text-blue-500 transition">
+            <Info size={20} /> About
+          </Link>
+          <Link to="/help" className="flex items-center gap-1.5 hover:text-blue-500 transition">
+            <CircleHelp size={20} /> Help
+          </Link>
         </div>
 
         {/* RIGHT: Theme Toggle + Hamburger */}
@@ -62,25 +71,32 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                           z-50 md:hidden
                           border-t border-slate-200 dark:border-slate-700">
             <Link
+              to="/"
+              onClick={() => setMenuOpen(false)}
+              className="flex items-center gap-2 text-lg font-semibold text-gray-800 dark:text-white hover:text-blue-500 transition w-full"
+            >
+              <House size={20} /> Home
+            </Link>
+            <Link
               to="/analyze"
               onClick={() => setMenuOpen(false)}
-              className="text-lg font-semibold text-gray-800 dark:text-white hover:text-blue-500 transition w-full"
+              className="flex items-center gap-2 text-lg font-semibold text-gray-800 dark:text-white hover:text-blue-500 transition w-full"
             >
-              Analyze Code
+              <Code2 size={20} /> Analyze Code
             </Link>
             <Link
               to="/about"
               onClick={() => setMenuOpen(false)}
-              className="text-lg font-semibold text-gray-800 dark:text-white hover:text-blue-500 transition w-full"
+              className="flex items-center gap-2 text-lg font-semibold text-gray-800 dark:text-white hover:text-blue-500 transition w-full"
             >
-              About
+              <Info size={20} /> About
             </Link>
             <Link
               to="/help"
               onClick={() => setMenuOpen(false)}
-              className="text-lg font-semibold text-gray-800 dark:text-white hover:text-blue-500 transition w-full"
+              className="flex items-center gap-2 text-lg font-semibold text-gray-800 dark:text-white hover:text-blue-500 transition w-full"
             >
-              Help
+              <CircleHelp size={20} /> Help
             </Link>
           </div>
         )}

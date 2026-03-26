@@ -48,7 +48,7 @@ const Footer = () => {
                 </div>
 
                 <a
-                    href="https://github.com"
+                    href="https://github.com/RohithReddyGK/AI-Driven-Code-Reviewer"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-slate-500 dark:text-white hover:text-blue-400 dark:hover:text-blue-400 transition-colors"

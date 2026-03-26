@@ -232,7 +232,7 @@ const LanguageMismatchBanner = ({ selectedLang, detectedLang, onDismiss }) => (
 
 /* ─── History Sidebar ─── */
 const HistorySidebar = ({ history, onSelect, onClose, darkMode }) => (
-  <div className={`fixed top-0 right-0 h-full w-full sm:w-72 z-40 shadow-2xl flex flex-col
+  <div className={`fixed top-[64px] md:top-[72px] right-0 h-[calc(100vh-64px)] md:h-[calc(100vh-72px)] w-full sm:w-72 z-40 shadow-2xl flex flex-col
     ${darkMode ? "bg-slate-900 border-l border-slate-700" : "bg-white border-l border-slate-200"}`}>
     <div className="flex items-center justify-between px-4 py-3 border-b border-slate-200 dark:border-slate-700">
       <div className="flex items-center gap-2">
